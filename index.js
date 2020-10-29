@@ -32,7 +32,7 @@ function submitToRemote() {
     // Do the fake ajax transmussion
     // Post on debug
     console.log('transmitting record...' + JSON.stringify(data))
-    document.getElementsByTagName("pre")[0].innerHTML = "<p>" + JSON.stringify(data) + "</p>"
+    document.getElementsByClassName("debug")[0].innerHTML = "<p>" + JSON.stringify(data) + "</p>"
     document.getElementsByTagName("pre")[0].style.display = "block" //Hmm, 
 }
 //Setup deleting for each of the added delete buttons
