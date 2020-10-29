@@ -1,6 +1,3 @@
-// your code goes here ...
-//1. Validate on submit, etc
-
 var form = document.forms[0];
 var data = [];
 
@@ -22,7 +19,6 @@ form.onsubmit = function (event) {
 
     return false; //false to not handle with the regular POST? (Avoid refreshing page)
 }
-
 
 ////// Helper functions - In no logical order, but the ones closer to the bottom came first/////
 
@@ -66,7 +62,6 @@ function addRecord() {
     }
     data.push(record)
 }
-
 
 //Validate age and relationship
 function validateForm() {
