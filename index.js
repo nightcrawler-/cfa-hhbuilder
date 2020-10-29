@@ -47,7 +47,7 @@ function setUpAndHandleRemove() {
 }
 
 //Build and display html with records.
-//Each of the <li> elements has a remove button with an id that corresponds to it's index in the 'data' structure on line 5 above. The buttons are aptly classed as remove to make it easy to find them when setting up the deletion mechanism
+//Each of the <li> elements has a remove button with an id that corresponds to it's index in the 'data' structure on line 2 above. The buttons are aptly classed as remove to make it easy to find them when setting up the deletion mechanism
 function displayData() {
     //PS: Non-perfomant as need to clear then add, refine.But is simpler as 
     var i
