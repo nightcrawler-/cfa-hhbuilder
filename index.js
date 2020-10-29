@@ -50,8 +50,8 @@ function setUpAndHandleRemove() {
 //Each of the <li> elements has a remove button with an id that corresponds to it's index in the 'data' structure on line 2 above. The buttons are aptly classed as remove to make it easy to find them when setting up the deletion mechanism
 function displayData() {
     //PS: Non-perfomant as need to clear then add, refine.But is simpler as 
-    var i
-    var listItems = ""
+    let i
+    let listItems = ""
     for (i = 0; i < data.length; i++) {
         listItems += "<li>Age: <strong>" + data[i].age + '</strong>, Relationship: <strong>' + data[i].rel + '</strong>, Smoker: <strong>' + data[i].smoker + '</strong> <button id="' + i + '" class="remove">remove</button>' + "</li>"
     }
@@ -60,7 +60,7 @@ function displayData() {
 
 //Add data to holder
 function addRecord() {
-    var record = {
+    let record = {
         "age": form["age"].value,
         "rel": form["rel"].value,
         "smoker": form["smoker"].checked
